@@ -1,0 +1,229 @@
+{template 'common/header'}
+<link rel="stylesheet" type="text/css" href="{MODULE_URL}static/css/diy.css" />
+<!--<link rel="stylesheet" type="text/css" href="{MODULE_URL}static/css/swiper-3.4.0.min.css" />-->
+<script src="{MODULE_URL}static/js/resize.js" type="text/javascript" charset="utf-8"></script>
+<div id="" class="mui-content diy-wrap">
+	<div class="col-xs-12 color-btn-wrap">
+		<ul class="color-btn">
+			<li style="margin-right: .1rem;">
+				<button style="background-color: #fff;" type="button" class="mui-btn ">
+					<span class="mui-icon mui-icon-checkmarkempty"></span>
+				</button>
+			</li>
+			<li>
+				<button style="background-color: #3155F9;" type="button" class="mui-btn ">
+					<span class="mui-icon mui-icon-checkmarkempty"></span>
+				</button>
+			</li>
+			<li>
+				<button style="background-color: #FF6A16;" type="button" class="mui-btn ">
+					<span class="mui-icon mui-icon-checkmarkempty"></span>
+				</button>
+			</li>
+			<li>
+				<button style="background-color: #CE0D01;" type="button" class="mui-btn ">
+					<span class="mui-icon mui-icon-checkmarkempty"></span>
+				</button>
+			</li>
+			<li>
+				<button style="background-color: #003406;" type="button" class="mui-btn ">
+					<span class="mui-icon mui-icon-checkmarkempty"></span>
+				</button>
+			</li>
+			<li>
+				<button style="background-color: #000000;" type="button" class="mui-btn ">
+					<span class="mui-icon mui-icon-checkmarkempty"></span>
+				</button>
+			</li>
+		</ul>
+	</div>
+	<img class="diy-img" style="width: 100%;" src="{MODULE_URL}static/images/white.png" alt="" />
+
+	<div class="mui-row diy-nav">
+		<div class="mui-col-sm-3 mui-col-xs-3">
+			<li class="mui-table-view-cell " id="picture-btn">
+				<a class="mui-tab-item ">
+					<span class="mui-icon mui-icon-image"></span>
+					<p class="mui-tab-label">插入图片</p>
+				</a>
+			</li>
+		</div>
+		<div class="mui-col-sm-3 mui-col-xs-3">
+			<li class="mui-table-view-cell">
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-compose"></span>
+					<p class="mui-tab-label">插入文字</p>
+				</a>
+			</li>
+		</div>
+		<div class="mui-col-sm-6 mui-col-xs-6 complate-btn">
+			<li class="mui-table-view-cell">
+				<a class="mui-tab-item ">
+					<span class="mui-icon mui-icon-checkmarkempty"></span> 完成设计
+				</a>
+			</li>
+		</div>
+	</div>
+	<button type="button" class="mui-btn delete-btn"><span class="mui-icon mui-icon-trash"></span></button>
+
+	<!--编辑按钮 开始-->
+	<ul class="edit-btn">
+		<li style="margin-bottom: .1rem;">
+			<button type="button" class="mui-btn ">
+					背
+			</button>
+		</li>
+		<li>
+			<button type="button" class="mui-btn ">
+					<span class="mui-icon mui-icon-search"></span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="mui-btn cls-styel-btn" style="border: 0;">
+					<img style="width: 100%;margin-bottom: .035rem;" src="{MODULE_URL}static/images/clothes.png"/>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="mui-btn " style="border: 0;">
+					<img style="width: 100%;margin-bottom: .035rem;" src="{MODULE_URL}static/images/text.png"/>
+			</button>
+		</li>
+	</ul>
+	<!--编辑按钮 结束-->
+
+	<!--衣服款式选择 开始-->
+	<div id="cls-style" class="col-xs-12 cls-style mui-popover mui-popover-action mui-popover-bottom">
+		<div class="col-xs-12 style-list">
+			<div class="col-xs-4">
+				<button type="button" class="mui-btn mui-btn-primary mui-active">T恤</button>
+			</div>
+			<div class="col-xs-4">
+				<button type="button" class="mui-btn mui-btn-primary ">POLO衫</button>
+			</div>
+			<div class="col-xs-4">
+				<button type="button" class="mui-btn mui-btn-primary">卫衣</button>
+			</div>
+		</div>
+		<div class="col-xs-12 gender-list">
+			<div class="col-xs-4">
+				<button type="button" class="mui-btn mui-btn-primary mui-active">男款</button>
+			</div>
+			<div class="col-xs-4">
+				<button type="button" class="mui-btn mui-btn-primary">女款</button>
+			</div>
+
+		</div>
+		<div class="col-xs-12">
+			<div style="height: 1rem;" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll" style="height: .8rem;">
+					<a class="mui-control-item mui-active">
+						<img style="height: 1rem;" src="{MODULE_URL}static/images/white.png" />
+					</a>
+					<a class="mui-control-item">
+						<img style="height: 1rem;" src="{MODULE_URL}static/images/white.png" />
+					</a>
+					<a class="mui-control-item">
+						<img style="height: 1rem;" src="{MODULE_URL}static/images/white.png" />
+					</a>
+					<a class="mui-control-item">
+						<img style="height: 1rem;" src="{MODULE_URL}static/images/white.png" />
+					</a>
+					<a class="mui-control-item">
+						<img style="height: 1rem;" src="{MODULE_URL}static/images/white.png" />
+					</a>
+					<a class="mui-control-item">
+						<img style="height: 1rem;" src="{MODULE_URL}static/images/white.png" />
+					</a>
+				</div>
+			</div>
+			<!-- Swiper -->
+			<!--<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="{MODULE_URL}static/images/white.png" /></div>
+					<div class="swiper-slide"><img src="{MODULE_URL}static/images/blue.png" /></div>
+					<div class="swiper-slide"><img src="{MODULE_URL}static/images/orange.png" /></div>
+					<div class="swiper-slide"><img src="{MODULE_URL}static/images/red.png" /></div>
+					<div class="swiper-slide"><img src="{MODULE_URL}static/images/green.png" /></div>
+					<div class="swiper-slide"><img src="{MODULE_URL}static/images/orange.png" /></div>
+
+				</div>
+
+			</div>-->
+		</div>
+	</div>
+	<!--衣服款式选择 结束-->
+	<!--插入照片 开始-->
+
+	<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#">拍照或录像</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#">选取现有的</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#picture"><b>取消</b></a>
+			</li>
+		</ul>
+	</div>
+	<!--插入照片 结束-->
+
+</div>
+
+<script type="text/javascript">
+	mui.init({
+		swipeBack: true //启用右滑关闭功能
+	});
+	$('.color-btn>li:first-child>button>span').show();
+	mui('.color-btn').on('tap', 'button', function() {
+			/****选择颜色****/
+
+			$(this).children('span').show();
+			$(this).parent().siblings().children().children('span').hide();
+		})
+		//图片数组
+	var srcArr = [
+		'{MODULE_URL}static/images/white.png',
+		'{MODULE_URL}static/images/blue.png',
+		'{MODULE_URL}static/images/orange.png',
+		'{MODULE_URL}static/images/red.png',
+		'{MODULE_URL}static/images/green.png',
+		'{MODULE_URL}static/images/orange.png'
+	];
+	//点击按钮跟换对应图片地址
+	mui('.color-btn').on('tap', 'button', function(e) {
+		var index = $(this).parent('li').index();
+		$('.diy-img').attr('src', srcArr[index]);
+
+	});
+
+	/***衣服款式 蒙层****/
+
+	mui('.edit-btn').on('tap', 'button.cls-styel-btn', function() {
+
+		mui('#cls-style').popover('toggle');
+
+	})
+
+	/***款式选择 ***/
+	mui('.style-list').on('tap', 'div', function() {
+		$(this).children('button').addClass('mui-active').parent('div').siblings().children().removeClass('mui-active');
+	})
+	mui('.gender-list').on('tap', 'div', function() {
+		$(this).children('button').addClass('mui-active').parent('div').siblings().children().removeClass('mui-active');
+	})
+
+	/*$(document).ready(function(){
+		var mySwiper = new Swiper('.swiper-container', {
+			slidesPerView: 4.5,
+		});
+	})*/
+	mui('#picture-btn').on('tap', 'a', function() {
+		mui('#picture').popover('toggle');
+	})
+</script>
+
+{template 'common/footer'}

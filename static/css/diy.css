@@ -1,0 +1,163 @@
+body {
+	padding-bottom: 0!important;
+}
+
+
+/*颜色选择按钮 开始*/
+
+.color-btn-wrap {
+	margin-top: .2rem;
+}
+
+.color-btn {
+	text-align: center;
+	padding-left: .1rem;
+	margin-bottom: 0;
+}
+
+.color-btn li,
+.color-btn li>button {
+	display: inline-block;
+	border-radius: 50%;
+	width: .3rem;
+	height: .3rem;
+	text-align: center;
+	line-height: .3rem;
+	overflow: hidden;
+	padding: 0;
+}
+
+.color-btn li>button {
+	border: 0;
+	font-size: .3rem;
+	color: #f1c50b;
+	line-height: .2rem;
+	text-align: center;
+}
+
+.color-btn>li+li {
+	margin-right: 10px;
+}
+
+.color-btn li>button>span {
+	display: none;
+}
+
+
+/*颜色选择按钮 结束*/
+
+
+/*删除按钮 开始*/
+
+.delete-btn {
+	width: .3rem;
+	height: .3rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: .18rem;
+	padding: 0;
+	font-size: .22rem;
+	border: 2px solid #000;
+	position: absolute;
+	right: .1rem;
+	top: 1.4rem;
+	color: #ED6551;
+}
+
+
+/*删除按钮 结束*/
+
+
+/*编辑按钮 开始*/
+
+.edit-btn {
+	position: absolute;
+	right: .1rem;
+	bottom: 1rem;
+}
+
+.edit-btn li,
+.edit-btn li>button {
+	border-radius: 50%;
+	width: .3rem;
+	height: .3rem;
+	text-align: center;
+	line-height: .3rem;
+	overflow: hidden;
+	padding: 0;
+}
+
+.edit-btn li>button {
+	font-size: .18rem;
+	line-height: .18rem;
+	text-align: center;
+	border: 2px solid #000;
+}
+
+.edit-btn>li+li {
+	margin-bottom: .1rem;
+}
+
+
+/*编辑按钮 结束*/
+
+.diy-wrap {
+	text-align: center;
+	bottom: 0!important;
+}
+
+li {
+	list-style: none;
+}
+
+.diy-nav {
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-right: .1rem;
+	z-index: 888;
+}
+
+.complate-btn {
+	margin-top: .12rem;
+	background-color: #333;
+}
+
+.complate-btn a {
+	color: #f1c50b!important;
+	font-size: .18rem;
+	letter-spacing: 2px;
+}
+/*衣服款式 开始*/
+.cls-style{
+	border: 1px solid red;
+	height: 2rem;
+	background: #ddd !important;
+	z-index: 999999;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+}
+.style-list,.gender-list{
+	border-bottom:1px solid #ccc;	
+	padding: .05rem 0;
+}
+.cls-style button{
+	background-color: rgba(0,0,0,0);
+	border: 1px solid transparent;
+	color: #333;
+}
+.cls-style button.mui-active{
+	background-color: #333!important;
+	border-color: #333!important;
+	color: #f1c50b!important;
+}
+/*衣服款式 结束*/
+
+.mui-backdrop{
+	background-color:rgba(0,0,0,0.5) ;
+	z-index: 998;
+}
