@@ -7,6 +7,7 @@ body {
 
 .color-btn-wrap {
 	margin-top: .2rem;
+	z-index: 991;
 }
 
 .color-btn {
@@ -74,6 +75,7 @@ body {
 	position: absolute;
 	right: .1rem;
 	bottom: 1rem;
+	z-index: 991;
 }
 
 .edit-btn li,
@@ -130,34 +132,137 @@ li {
 	font-size: .18rem;
 	letter-spacing: 2px;
 }
+
+
 /*衣服款式 开始*/
-.cls-style{
-	border: 1px solid red;
+
+.cls-style {
 	height: 2rem;
 	background: #ddd !important;
 	z-index: 999999;
 	position: fixed;
 	bottom: 0;
 	left: 0;
-
 }
-.style-list,.gender-list{
-	border-bottom:1px solid #ccc;	
+
+.style-list,
+.gender-list {
+	border-bottom: 1px solid #ccc;
 	padding: .05rem 0;
 }
-.cls-style button{
-	background-color: rgba(0,0,0,0);
+
+.cls-style button {
+	background-color: rgba(0, 0, 0, 0);
 	border: 1px solid transparent;
 	color: #333;
 }
-.cls-style button.mui-active{
+
+.cls-style button.mui-active {
 	background-color: #333!important;
 	border-color: #333!important;
 	color: #f1c50b!important;
 }
+
+
 /*衣服款式 结束*/
 
-.mui-backdrop{
-	background-color:rgba(0,0,0,0.5) ;
+.mui-backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 998;
 }
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	text-decoration: none;
+	color: #428bca;
+}
+
+.mui-popup-button {
+	color: #428bca;
+}
+
+/*上传图片*/
+
+.get-pic {
+	opacity: 0;
+	background-color: ;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100%;
+	margin: 0;
+	height: .4rem;
+}
+/*选中衣服*/
+.cls-selected{
+	width:.2rem!important;
+	height:.2rem!important ;
+	border: 1px solid #f1c50b!important;
+	border-radius: 50%;
+	background-color: #333;
+	color:#f1c50b ;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-90%,-50%);
+	line-height: .2rem!important;
+}
+.pic-wrap{
+	display: block;
+	position: relative;
+}
+.clothes-slider span{
+	display: none;
+}
+.clothes-slider a{
+	padding-left: 0!important;
+	padding-right:.1rem!important;
+}
+.clothes-slider a.mui-active{
+	border: 0!important;
+}
+.clothes-slider a.mui-active>span{
+	display: block;
+}
+/*滤镜和模板 开始*/
+.filter-nav{
+	background-color: #fff;
+	z-index: 9999999;
+	height:.6rem ;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.filter-nav div{
+	text-align: center;
+}
+.filter-nav div.active,.filter-nav div.active p{
+	color: #f1c50b;
+}
+.muban-list{
+	height: 2.7rem;
+	width: 100%;
+	margin-bottom: .6rem;
+	display: none;
+	overflow: auto;
+	background-color: #ccc;
+}
+.muban-list img{
+	width: 100%;
+}
+.show-muban{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+.show-muban img{
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%,0);
+	
+}
+
+/*滤镜和模板 结束*/
