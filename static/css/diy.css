@@ -194,7 +194,7 @@ li {
 	height: .4rem;
 }
 /*选中衣服*/
-.cls-selected{
+.cls-selected,.filter-mb-selected{
 	width:.2rem!important;
 	height:.2rem!important ;
 	border: 1px solid #f1c50b!important;
@@ -206,6 +206,9 @@ li {
 	top: 50%;
 	transform: translate(-90%,-50%);
 	line-height: .2rem!important;
+}
+.filter-mb-selected{
+	transform:translate(-50%,-70%)
 }
 .pic-wrap{
 	display: block;
@@ -240,15 +243,15 @@ li {
 .filter-nav div.active,.filter-nav div.active p{
 	color: #f1c50b;
 }
-.muban-list{
+.muban-list,.filter-list{
 	height: 2.7rem;
 	width: 100%;
 	margin-bottom: .6rem;
 	display: none;
 	overflow: auto;
-	background-color: #ccc;
+	background-color: #fff;
 }
-.muban-list img{
+.muban-list img,.filter-list img{
 	width: 100%;
 }
 .show-muban{
@@ -263,6 +266,23 @@ li {
 	left: 50%;
 	transform: translate(-50%,0);
 	
+}
+.filter-list{
+	display: none;
+}
+.filter-title{
+	background-color: rgba(0,0,0,.5);
+	
+	text-align: center;
+}
+.filter-wrap{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding:0 .05rem ;
+}
+.filter-img-wrap,.mb-wrap{
+	padding: .05rem;
 }
 
 /*滤镜和模板 结束*/
